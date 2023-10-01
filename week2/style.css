@@ -17,6 +17,12 @@ header {
     padding: 20px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
 .headeraH1 {
     margin: 0;
 }
