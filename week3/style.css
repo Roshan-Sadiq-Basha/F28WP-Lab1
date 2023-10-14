@@ -1,0 +1,344 @@
+/* Reset Styles */
+
+body {
+    background: scroll;
+       margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #505050;
+}
+
+
+/* Header Styles */
+.header {
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Navigation Styles */
+nav ul {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #505050;  /* Darker shade for hover */
+}
+
+/* Banner Styles */
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.centered-banner {
+    padding: 30px;
+    max-width: 80%;
+    height: auto;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.services {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h3 {
+    margin-top: 20px;
+}
+
+/* Service Columns */
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-column {
+    flex-basis: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-column img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-column h3 {
+    margin-bottom: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 800px) {
+    .service-column {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 700px) {
+    .service-column {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Call to Action Styles */
+.cta-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #99ff33;
+    margin-top: 30px;
+    font-size: 60px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+#Title{
+    color:#00DDEB;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+#para{
+    font-size: 30px;
+    font-weight: bold;
+    color:black;
+}
+
+
+.cta-button {
+   display: inline-block;
+   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    padding: 30px 50px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    color: #FFFFFF;
+    text-decoration: underline;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #7640B3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;  /* Smooth transition for hover effect */
+}
+
+footer a:hover {
+    color: #b3b3b3;  /* Lighter color on hover */
+}
+
+footer p {
+    margin: 10px 0 0;
+}
+
+/*for slideshow*/
+* {
+    box-sizing: border-box;
+    }
+    .slideshow-img {
+    vertical-align: middle;
+    width: 100%;
+    }
+    /* Position the image container (needed to position the left and right 
+    arrows) */
+    .container {
+    position: relative;
+    }
+    /* Hide the images by default */
+    .mySlides {
+    display: none;
+    }
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+    cursor: pointer;
+    }
+    /* Next & previous buttons */
+    .prev,
+    .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    }
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+    .prev{
+        left:0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+
+/**********************************************************************************************************************/
+/* Css for Form*/
+
+/* Style for the form: setting width, auto margin for centering, padding, 
+background color, border radius for rounded corners, and font size */
+#form {
+    width: 300px;
+    margin: 20vh auto 0 auto; /* This centers the form vertically and 
+    horizontally */
+    padding: 20px;
+    background-color: whitesmoke; /* Light gray background for the form */
+    border-radius: 4px; /* Rounded corners for the form */
+    font-size: 12px;
+    }
+    /* Style for the form's heading: setting the text color and alignment */
+    #form h1 {
+    color: #0f2027; /* Dark text color for the heading */
+    text-align: center; /* Center-align the heading */
+    }
+    /* Style for the form's button: padding, top margin, full width, text color, 
+    background color, no border, and rounded corners */
+    #form button {
+    padding: 10px;
+    margin-top: 10px; /* Space above the button */
+    width: 100%; /* Make the button expand the full width of the form */
+    color: white; /* White text color for the button */
+    background-color: rgb(41, 57, 194); /* Blue background color for the button 
+    */
+    border: none; /* Remove the default border */
+    border-radius: 4px; /* Rounded corners for the button */
+    }
+    /* Container for input fields: using flexbox for layout, column direction */
+    .input-control {
+    display: flex;
+    flex-direction: column; /* Stack the children (label, input, error message) 
+    vertically */
+    }
+    /* Style for input fields inside the container: border style, rounded corners, 
+    block-level display, font size, padding, full width */
+    .input-control input {
+    border: 2px solid #f0f0f0; /* Light gray border for the inputs */
+    border-radius: 4px; /* Rounded corners for the inputs */
+    display: block; /* Display input field as a block */
+    font-size: 12px; /* Text size within the input field */
+    padding: 10px; /* Space inside the input field */
+    width: 100%; /* Input field takes up 100% of the form's width */
+    }
+    /* Remove focus outline from input fields */
+    .input-control input:focus {
+    outline: 0; /* Remove outline when input is focused */
+    }
+    /* Style for input fields with class "success": green border */
+    .input-control.success input {
+    border-color: #09c372; /* Green border to indicate successful input */
+    }
+    /* Style for input fields with class "error": red border */
+    .input-control.error input {
+    border-color: #ff3860; /* Red border to indicate an error in input */
+    }
+    /* Style for the error message: text color, font size, and height */
+    .input-control .error {
+    color: #ff3860; /* Red text color for error messages */
+    font-size: 9px; /* Smaller font size for error messages */
+    height: 13px; /* Explicit height to ensure consistent spacing */
+    }
+    
