@@ -9,48 +9,46 @@
   <script>
 
 
+    // variable that keeps track of slides.
 
     let cursor = 0;
 
 
     function Slides(x)
     {
+      // gets all elements with the class name with mySlides
+      // which means it gets all the slides.
       var slides = document.getElementsByClassName("mySlides");
+      console.log(slides.length);
 
+      // when function is called it hides the current image being displayed
+         slides[cursor].style.display = "none";
+         // It then selects the next imaage
+         cursor = cursor + x ;
 
-
-
-      slides[cursor].style.display = "none";
-
-      
-        slides[cursor].style.display = "none";
-        cursor = cursor + x ;
-
-
-        if (cursor == 8 ){
+        // if the cursor is greater than the length of the list it loops around back to the beginning
+        if (cursor > (slides.length -1) ){
         slides[0].style.display = "none";
 
         cursor = 0;
         slides[0].style.display = "inline";
         return;
       }
-
-      if (cursor == -1 ){
+      // if the cursor is less than the length of the list it loops around to the end
+      if (cursor < 0 ){
         slides[7].style.display = "none";
 
         cursor = 7;
         slides[7].style.display = "inline";
         return;
       }
-      
+      // displays the image with the index of curosr
         slides[cursor].style.display = "inline";
 
   }
 
-
     </script>
 
-    
 </head>
 
   
