@@ -1,0 +1,6 @@
+It was not to haard to implement the slideshow.
+a unseen challenge was making it so that if it reached the end of the slideshow it would loop back.
+i had a bug where if it reached the last image it would just stop working.
+After asking a TA they said that it was because the cursor vairable i had was going beyond the list length and crashed.
+After figuring this out it was a east fix of 2 if statments that accounted for the ends of the array
+  
